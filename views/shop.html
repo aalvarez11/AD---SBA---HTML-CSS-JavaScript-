@@ -35,6 +35,79 @@
         </div>
     </nav>
 </header>
+<h1 style="display: flex; justify-content: center; font-family: Verdana, Arial, sans-serif">Daily Shop</h1>
+<div style="display: flex; justify-content: center; font-family: Verdana, Arial, sans-serif">
+    <p>Buy from today's selection of eggs, food, toys and other items!</p>
+</div>
+<div class="container-fluid" id="shop-container"></div>
+
+<div class="accordion accordion-flush" id="accordionShopPreview">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Preview what's sold on a given day
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionShopPreview">
+            <table class="table table-hover" id="collapseTable" aria-label="preview-items-by-day">
+                <thead>
+                <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Eggs</th>
+                    <th scope="col">Toys</th>
+                    <th scope="col">Food</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Sunday</th>
+                    <td>Water, Thunder</td>
+                    <td>Paints, Dollhouse</td>
+                    <td>Pancakes, Burger, Oranges</td>
+                </tr>
+                <tr>
+                    <th scope="row">Monday</th>
+                    <td>Thunder, Fire</td>
+                    <td>Puzzle, Camera</td>
+                    <td>Omelette, Pizza, Apples</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tuesday</th>
+                    <td>Fire, Earth</td>
+                    <td>Ball, Trumpet</td>
+                    <td>Oatmeal, Salad, Berries</td>
+                </tr>
+                <tr>
+                    <th scope="row">Wednesday</th>
+                    <td>Earth, Light</td>
+                    <td>Book, Tablet</td>
+                    <td>Omelette, Burger, Mangoes</td>
+                </tr>
+                <tr>
+                    <th scope="row">Thursday</th>
+                    <td>Light, Dark</td>
+                    <td>Spaceship, Piano</td>
+                    <td>Pancakes, Pizza, Berries</td>
+                </tr>
+                <tr>
+                    <th scope="row">Friday</th>
+                    <td>Dark, Water</td>
+                    <td>Plush, TV</td>
+                    <td>Oatmeal, Salad, Apples</td>
+                </tr>
+                <tr>
+                    <th scope="row">Saturday</th>
+                    <td>Water, Thunder, Fire, Earth, Light, Dark</td>
+                    <td>Bricks, Oven</td>
+                    <td>McGuffin, Tacos, Oranges</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="../js/loadshop.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
