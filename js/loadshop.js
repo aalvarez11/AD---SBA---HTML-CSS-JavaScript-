@@ -151,7 +151,7 @@ function init() {
     const seventhInnerHTML = `<img src="http://bestanimations.com/media/fruit-veg/760026074pixel-art-strwaberries-gif.gif" class="card-img-top" alt="playing checkers">
                             <div class="card-body">
                                 <h2 class="card-text">${todaysFruit}</h2>
-                                <p class="card-text">Price: 100 coins</p>
+                                <p class="card-text">Price: 80 coins</p>
                             </div>`;
 
     //add the card
