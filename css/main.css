@@ -55,12 +55,18 @@ h2, p {
     text-align: center;
 }
 
-#games-container {
+#games-container, #shop-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .accordion {
     width: 40%;
     margin: 25px auto;
+}
+
+#shop-container .card {
+    margin: 15px;
+    margin: 15px;
 }

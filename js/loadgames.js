@@ -1,4 +1,4 @@
-console.log("loadgames.js loaded \n loading stored games");
+console.log("loadgames.js loaded \nloading stored games");
 
 // start the script on page load
 window.onload = init();
