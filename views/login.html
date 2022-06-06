@@ -5,8 +5,33 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Garden 2.0 Login</title>
-    <script defer src="../js/validate.js"></script>
+    <script defer src="../js/login.js"></script>
     <link rel="stylesheet" href="../css/main.css">
+    <style>
+        #login-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            height:70%;
+            width: 30%;
+            margin: auto;
+        }
+
+        input, button {
+            width:70%;
+            height: 40px;
+        }
+
+        #form-error {
+            color: red;
+        }
+
+        .form-select {
+            margin: auto;
+        }
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
@@ -35,6 +60,22 @@
         </div>
     </nav>
 </header>
+<form id="login-form" onsubmit="return false">
+    <h1>Sign In</h1>
+
+    <label for="log-email"><strong>Email</strong></label>
+    <input type="email" placeholder="Enter Email" name="email" id="log-email" required>
+
+    <label for="log-psw"><strong>Password</strong></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="log-psw" required>
+
+    <br>
+    <button type="submit" class="loginbtn">Log in</button>
+    <br>
+
+    <div id="form-error"></div>
+
+</form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

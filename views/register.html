@@ -7,6 +7,35 @@
     <title>Garden 2.0 Register</title>
     <script defer src="../js/validate.js"></script>
     <link rel="stylesheet" href="../css/main.css">
+    <style>
+        #register-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            height:70%;
+            width: 30%;
+            margin: auto;
+        }
+
+        input, button {
+            width:70%;
+            height: 40px;
+        }
+
+        #signin-container {
+            padding:10px;
+        }
+
+        #form-error {
+            color: red;
+        }
+
+        .form-select {
+            margin: auto;
+        }
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
@@ -48,13 +77,25 @@
     <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
     <br>
 
+    <select class="form-select" id="robot-check" aria-label="Default select example">
+        <option selected>Are you a robot?</option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+        <option value="3">Just a little bit</option>
+        <option value="4">Beep?</option>
+    </select>
+    <div id="robot-check-response"></div>
+
     <button type="submit" class="registerbtn">Register</button>
     <br>
+
     <p id="form-error"></p>
     <div id="signin-container">
-        <p>Already have an account? <a href="#">Sign in</a></p>
+        <p>Already have an account? <a href="login.html">Sign in</a></p>
     </div>
 </form>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
