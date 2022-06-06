@@ -55,7 +55,20 @@ The registration page for incoming members to sign up. There is a registration f
 
 #### Log In
 
+The log in page for existing members to reach their accounts. There is minimal validation for this page (it doesn't check password with regex), what it does instead is check if the email and password match any presets (provided below) and sends 'users' to a corresponding endpoint.
+
+| email           | password | endpoint       |
+|-----------------|----------|----------------|
+| admin@gmail.com | admin    | youtube secret |
+| shop@gmail.com  | shopping | shop.html      |
+| game@gmail.com  | play     | games.html     |
+| reg@gmail.com   | join     | register.html  |
+| base@gmail.com  | home     | index.html     |
 
 #### Games
 
+The games page shows users the selection of minigames available to play and the payout each game can give. Games are loaded on page load using loadshop.js which makes a bootstrap card with an image for each game.
+
 #### Shop
+
+The shop page shows users the selection of items sold for a given weekday. Items are loaded using loadshop.js and multiple functions determine what items are available depending on what day a user visits the site. Items are loaded in as bootstrap cards with an image and the price of the item in question. There is also a collapsible table at the bottom of the page for users to see what will be available when, so they can plan ahead. 

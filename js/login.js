@@ -23,6 +23,16 @@ function attemptLogin() {
     // different accounts lead to different pages
     if (email == "admin@gmail.com" && pass == "admin") {
         window.location.href = "https://www.youtube.com/watch?v=re094oIejfA";
+    } else if (email == "shop@gmail.com" && pass == "shopping") {
+        window.location.href = "shop.html";
+    } else if (email == "game@gmail.com" && pass == "play") {
+        window.location.href = "games.html";
+    } else if (email == "reg@gmail.com" && pass == "join") {
+        window.location.href = "register.html";
+    } else if (email == "base@gmail.com" && pass == "home") {
+        window.location.href = "../index.html";
+    } else {
+        document.getElementById("form-error").innerText = "Invalid email or password";
     }
 
 }
