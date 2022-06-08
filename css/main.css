@@ -51,6 +51,22 @@ img {
     max-height: 420px; /* the images are same size @ 420px but will differ past this height */
 }
 
+.filler-info, h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#accordionIndex .accordion-item {
+    background-color: #9ed9f7;
+}
+
+/* this selector edits the accordion's clickable titles */
+/*#accordionIndex .accordion-button {
+    background-color: #fff605;
+}*/
+
 h2, p {
     text-align: center;
 }
